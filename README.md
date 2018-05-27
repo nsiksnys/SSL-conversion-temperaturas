@@ -4,15 +4,15 @@
 * González Yebra Emanuel<br />
 * Siksnys Nadia<br />
 
-##Uso
-###Compilación
+## Uso
+### Compilación
 ```
 $ make
 cc -std=c11 -Wall -Wmissing-prototypes   -c -o Conversion.o Conversion.c
 cc -std=c11 -Wall -Wmissing-prototypes    TablasDeConversion.c Conversion.o   -o TablasDeConversion
 ```
 
-###Compilación y ejecución
+### Compilación y ejecución
 ```
 $ make run                    
 ./TablasDeConversion
