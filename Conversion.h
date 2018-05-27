@@ -1,2 +1,2 @@
-float celsius (int fahr); // recibe fahrenheit, devuelve celsius
-float fahrenheit (int cel); // recibe celsius, devuelve fahrenheit
+double Celsius (int fahr); // recibe fahrenheit, devuelve celsius
+double Fahrenheit (int cel); // recibe celsius, devuelve fahrenheit
