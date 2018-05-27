@@ -10,11 +10,11 @@ int main(void) {
 	
 	printf("Fahrenheit a Celsius\n");
 	for (fahr = MIN; fahr <= MAX; fahr = fahr + ESC){
-		printf("%3d %c F =%6.1f %c C\n", fahr, 248, celsius(fahr), 248);
+		printf("%3d F° =%6.1f C°\n", fahr, Celsius(fahr));
 	}
 	
 	printf("\n\nCelsius a Fahrenheit\n");
 	for (cel = MIN; cel <= MAX; cel = cel + ESC){
-		printf("%3d %c C =%6.1f %c F\n", cel, 248, fahrenheit(cel), 248);
+		printf("%3d C° =%6.1f F°\n", cel, Fahrenheit(cel));
 	}
 }
