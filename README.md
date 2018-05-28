@@ -1,11 +1,11 @@
 # SSL
 **Curso:** K2051 2018<br />
 **Integrantes:**<br />
-*Bieniasz Ezequiel<br />
-*Godirio Martin Gabriel<br />
-*González Yebra Emanuel<br />
-*Lastiesas Agustin<br />
-*Siksnys Nadia<br />
+* Bieniasz Ezequiel<br />
+* Godirio Martin Gabriel<br />
+* González Yebra Emanuel<br />
+* Lastiesas Agustin<br />
+* Siksnys Nadia<br />
 
 ## Uso
 ### Compilación y ejecución
