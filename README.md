@@ -3,6 +3,8 @@
 **Integrantes:**<br />
 * González Yebra Emanuel<br />
 * Siksnys Nadia<br />
+* Agustin Lastiesas<br />
+* Ezequiel Bieniasz<br />
 
 ## Uso
 ### Compilación y ejecución
