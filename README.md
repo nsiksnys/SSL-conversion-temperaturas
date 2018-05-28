@@ -5,13 +5,6 @@
 * Siksnys Nadia<br />
 
 ## Uso
-### Compilación
-```
-$ make
-cc -std=c11 -Wall -Wmissing-prototypes   -c -o Conversion.o Conversion.c
-cc -std=c11 -Wall -Wmissing-prototypes    TablasDeConversion.c Conversion.o   -o TablasDeConversion
-```
-
 ### Compilación y ejecución
 ```
 $ make run                    
@@ -55,6 +48,12 @@ Celsius a Fahrenheit
 ```
 
 ### Tests
+```
+$ make test
+cc -std=c11 -Wall -Wmissing-prototypes   -c -o Conversion.o Conversion.c
+cc -std=c11 -Wall -Wmissing-prototypes    ConversionTest.c Conversion.o   -o ConversionTest
+./ConversionTest
+```
 
 ### Limpieza
 ```
@@ -62,14 +61,20 @@ $ ls -1
 Conversion.c
 Conversion.h
 Conversion.o
+ConversionTest
+ConversionTest.c
 Makefile
 README.md
-TablasDeConversion  TablasDeConversion.c
+TablasDeConversion
+TablasDeConversion.c
+
 $ make clean
-rm -f TablasDeConversion.o TablasDeConversion.o Conversion.o TablasDeConversion
+rm -f Conversion.o TablasDeConversion ConversionTest
+
 $ ls -1
 Conversion.c
 Conversion.h
+ConversionTest.c
 Makefile
 README.md
 TablasDeConversion.c
