@@ -1,66 +1,66 @@
 #include <stdio.h>
 #include "Conversion.h"
 
-void printTablas(void);
-void printTablaFahrenheit(void);
-void printTablaCelcius(void);
-void printFilas(int, int, double(*f)(int));
-void printFila(int, int, int, double(*f)(int));
+void PrintTablas (void);
+void PrintTablaFahrenheit(void);
+void PrintTablaCelcius(void);
+void PrintFilas (int a,int b,double(*f)(double));
+void PrintFila (int a,int b,double x, double(*f)(double));
 
-const int	MIN = 0, // limite minimo tabla
-			MAX = 300, // limite maximo tabla
-			ESC = 20; // escala salto
+const double	MIN = 0, // limite minimo tabla
+		            MAX = 300, // limite maximo tabla
+			        ESC = 20; // escala salto
 
 int main(void) {
 	
 	
-	printTablas();
+	PrintTablas();
 
 	return 0;
 }
 
 
 
-void printTablas(){
+void PrintTablas (void){
 
     printf("Fahrenheit a Celsius\n");
-	printTablaFahrenheit();
+	PrintTablaFahrenheit ();
 
 	printf("\n\nCelsius a Fahrenheit\n");
-	printTablaCelcius();
+	PrintTablaCelcius ();
 
 }
 
-void printTablaFahrenheit(){
+void PrintTablaFahrenheit(void){
 
 	
 	int f=70;
 	int c=67; 
 
-	printFilas(c,f,&Celsius);
+	PrintFilas(c,f,&Celsius);
 }
 
-void printTablaCelcius(){
+void PrintTablaCelcius (void){
 
 	
 	int f=70;
 	int c=67;
 
-	printFilas(f,c,&Fahrenheit);
+	PrintFilas (f,c,&Fahrenheit);
 }
 
-void printFilas(int a,int b,double(*f)(int)){
+void PrintFilas (int a,int b,double(*f)(double)){
 
-	int x;
+	double x;
 
-	for(x = MIN; x <= MAX; x = x + ESC){
-		printFila(a,b,x,&(*f));
+	for (x = MIN; x <= MAX; x = x + ESC){
+		PrintFila(a,b,x,&(*f));
 	}
 }
 
 
-void printFila(int a,int b,int x, double(*f)(int)){
+void PrintFila(int a,int b,double x, double(*f)(double)){
 
-	printf("%3d %c° =%6.1f %c°\n", x, a,(*f)(x), b);
+	printf("%3.0f %c° =%6.1f %c°\n", x, a, (*f)(x), b);
 }
 
